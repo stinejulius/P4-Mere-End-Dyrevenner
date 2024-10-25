@@ -1,22 +1,23 @@
 /* This is the "tilmeld" CSS document */
 
-.banner__photo{
+.banner__photo {
     height: 350px;
     width: 100%;
 }
-.overlay__text{
+
+.overlay__text {
     position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height: 450px ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
 }
 
-.banner__content .tilmeld__h1{
+.banner__content .tilmeld__h1 {
     color: #171777;
     text-align: center;
     font-family: Poppins;
@@ -26,16 +27,16 @@
     line-height: normal;
 }
 
-.section-white{
+.section-white {
     width: 100%;
 
     display: flex;
 
-flex-direction: column;
-align-items: center;
+    flex-direction: column;
+    align-items: center;
 }
 
- .section-white__content{
+.section-white__content {
     display: flex;
     width: 360px;
     height: 370px;
@@ -46,45 +47,25 @@ align-items: center;
 
 }
 
-.section-white__h3{
+.section-white__h3 {
     color: #171777;
-font-family: "Nunito Sans";
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
 }
 
-.dropdown-boxes{
+.dropdown-boxes {
     display: flex;
-width: 360px;
-height: 138px;
-padding-bottom: 40px;
-flex-direction: column;
-align-items: flex-start;
-gap: 20px;
+    width: 360px;
+    height: 138px;
+    padding-bottom: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
 }
 
-.dropdown-forventning{
-    display:flex;
-    justify-content: space-between;
-padding: 12px 15px;
-align-items: center;
-gap: 29px;
-align-self: stretch;
-background-color: #171777;
-}
-
-.dropdown-forventning__text{
-    color: #f5f5f5;
-    font-size: 14px;
-}
-
-.dropdown-praktisk__text{
-    color: #f5f5f5;
-    font-size: 14px;
-}
-
-.dropdown-praktisk{
+.dropdown-forventning {
     display: flex;
     justify-content: space-between;
     padding: 12px 15px;
@@ -93,29 +74,50 @@ background-color: #171777;
     align-self: stretch;
     background-color: #171777;
 }
-.section-pink{
-    display: flex;
-width: 390px;
-height: 1146px;
-padding: 20px 0px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 48px;
-background-color:#FFACAC;
+
+.dropdown-forventning__text {
+    color: #f5f5f5;
+    font-size: 14px;
 }
 
-.tilmeldings-section{
+.dropdown-praktisk__text {
+    color: #f5f5f5;
+    font-size: 14px;
+}
+
+.dropdown-praktisk {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 15px;
+    align-items: center;
+    gap: 29px;
+    align-self: stretch;
+    background-color: #171777;
+}
+
+.section-pink {
+    display: flex;
+    width: 390px;
+    height: 1146px;
+    padding: 20px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    background-color: #FFACAC;
+}
+
+.tilmeldings-section {
     display: flex;
     height: 1146px;
     margin: 10px 20px;
-flex-direction: column;
-align-items: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
 
-align-self: stretch;
+    align-self: stretch;
 }
 
-.internatvælger-text{
+.internatvælger-text {
     color: #171777;
     font-family: "Nunito Sans";
     font-size: 16px;
@@ -124,13 +126,13 @@ align-self: stretch;
 
 }
 
-.internat-box{
+.internat-box {
     display: flex;
     height: 20px;
     width: 300px;
     margin: 10px;
     padding: 10px;
 
-align-items: center;
-background-color: #f5f5f5;
+    align-items: center;
+    background-color: #f5f5f5;
 }
