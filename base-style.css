@@ -94,6 +94,21 @@ p.small {
 }
 
 
+/* =============== Header =============== */
+
+#header-box {
+    padding: 0px 15px 0px 15px;
+    background: #D2DFFF;
+}
+
+#header-box-content {
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 /* ========================================================================================== */
 
 /* =============== Media Query =============== */
