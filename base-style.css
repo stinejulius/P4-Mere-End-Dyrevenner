@@ -18,6 +18,7 @@ h1 {
     font-weight: 900;
     font-style: normal;
     color: #171777;
+    margin: 0px;
 }
 
 
@@ -28,6 +29,7 @@ h2 {
     font-weight: 900;
     font-style: normal;
     color: #171777;
+    margin: 0px;
 }
 
 
@@ -39,6 +41,7 @@ h3 {
     font-style: normal;
     color: #171777;
     line-height: 150%;
+    margin: 0px;
 }
 
 
@@ -50,6 +53,7 @@ h4 {
     font-style: normal;
     color: #171777;
     line-height: 100%;
+    margin: 0px;
 }
 
 
@@ -61,6 +65,7 @@ p {
     font-style: normal;
     color: #171777;
     line-height: 150%;
+    margin: 0px;
 }
 
 
@@ -96,17 +101,104 @@ p.small {
 
 /* =============== Header =============== */
 
-#header-box {
+.header {
     padding: 0px 15px 0px 15px;
     background: #D2DFFF;
+    position: sticky;
+
+    .header__content {
+        display: flex;
+        height: 60px;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
-#header-box-content {
-    display: flex;
-    height: 60px;
-    justify-content: space-between;
-    align-items: center;
+.logo {
+    .logo--header {
+        height: 44px;
+    }
 }
+
+
+/* =============== Footer =============== */
+
+footer p {
+    color: #D2DFFF;
+}
+
+.footer {
+    padding: 15px;
+    background: #171777;
+
+    .footer__content {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+.link-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    .link-list__items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    .logo__db {
+        width: 185px;
+    }
+
+    .logo__en-af-os {
+        height: 70px;
+    }
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.contact-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    .contact-information__items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+}
+
 
 
 /* ========================================================================================== */
