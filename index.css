@@ -1,0 +1,14 @@
+/* This is the index CSS document */
+
+
+/* =============== Block: introduction =============== */
+
+.intro-image {
+    width: 100%;
+    height: 350px;
+}
+
+.intro-heading {
+    display: flex;
+    flex-direction: column;
+}
