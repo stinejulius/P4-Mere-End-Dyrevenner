@@ -4,6 +4,7 @@
 /* =============== Color Root =============== */
 
 :root {
+    /* ======= our colors ======= */
     --color-white: #F5F5F5;
     /*var(--color-white)*/
 
@@ -23,10 +24,12 @@
     /*var(--color-pastel-pink)*/
 
 
+    /* ======= primary color ======= */
     --color-primary: var(--color-blue);
     /*var(--color-primary)*/
 
 
+    /* ======= specific colors ======= */
     --header-bg-color: var(--color-light-blue);
     /*var(--page-bg-color)*/
 
@@ -158,6 +161,41 @@ p.small {
     .logo--header {
         height: 44px;
     }
+}
+
+
+/* =============== CTA button =============== */
+
+.cta-button {
+    /* Neutralizes the default styles on the semantic tag 'button' */
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    text-decoration: none;
+
+    /* Button style */
+    display: flex;
+    width: 100%;
+    max-width: 125px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 22px;
+    background-color: var(--color-light-coral-red);
+}
+
+.cta-button:hover {
+    background-color: var(--color-blue);
+
+    p {
+           color: var(--color-light-coral-red); 
+    }
+
 }
 
 
