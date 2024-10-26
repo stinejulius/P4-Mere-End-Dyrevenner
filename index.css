@@ -33,6 +33,7 @@
     }
 }
 
+
 /* ===== introduction-content */
 
 .introduction-content {
@@ -94,4 +95,75 @@
         width: 148px;
         height: 44.411px;
     }
+}
+
+
+/* =============== Block: ensomhed-section =============== */
+
+/* ===== ensomhed-section*/
+.ensomhed-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    .ensomhed-section__banner {
+
+    }
+
+    .ensomhed-section__content {
+        padding: 0px 15px 0px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 540px;
+    }
+}
+
+
+/* ===== ensomhed-introduction */
+
+.ensomhed-introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+
+/* ===== ensomhed-signs-content */
+
+.ensomhed-signs-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.ensomhed-all-signs {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.ensomhed-sign {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    .ensomhed-sign__description {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+/* ===== ensomhed-closing-text */
+
+.ensomhed-closing-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
