@@ -23,6 +23,9 @@
     --color-pastel-pink: #FFACAC;
     /*var(--color-pastel-pink)*/
 
+    --color-grey: #BDBDBD;
+    /*var(--color-grey)*/
+
 
     /* ======= primary color ======= */
     --color-primary: var(--color-blue);
