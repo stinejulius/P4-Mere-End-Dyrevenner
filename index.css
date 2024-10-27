@@ -306,3 +306,17 @@
         background-color: var(--color-white);
     }
 }
+
+
+/* =============== Block: vil-du-vide-mere =============== */
+
+.vil-du-vide-mere {
+    padding: 30px 15px;
+
+    .vil-du-vide-mere__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
