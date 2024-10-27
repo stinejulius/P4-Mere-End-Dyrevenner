@@ -100,25 +100,42 @@
 
 /* =============== Block: ensomhed-section =============== */
 
-/* ===== ensomhed-section*/
 .ensomhed-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
 
-    .ensomhed-section__banner {
-
-    }
-
     .ensomhed-section__content {
-        padding: 0px 15px 0px 15px;
+        padding: 0px 15px 30px 15px;
         display: flex;
         flex-direction: column;
         gap: 40px;
         max-width: 540px;
     }
 }
+
+
+/* ===== banner*/
+.banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+
+    .banner__image {
+        height: 175px;
+    }
+
+    .banner__text {
+        position: absolute;
+        top: 61px;
+        color: var(--color-light-blue);
+    }
+}
+
 
 
 /* ===== ensomhed-introduction */
