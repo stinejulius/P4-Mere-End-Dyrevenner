@@ -27,16 +27,14 @@
     line-height: normal;
 }
 
-.section-white {
+.introduction {
     width: 100%;
-
     display: flex;
-
     flex-direction: column;
     align-items: center;
 }
 
-.section-white__content {
+.introduction__content {
     display: flex;
     width: 360px;
     height: 370px;
@@ -44,10 +42,9 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-
 }
 
-.section-white__h3 {
+.introduction .p .bold {
     color: #171777;
     font-family: "Nunito Sans";
     font-size: 16px;
@@ -57,7 +54,6 @@
 
 .dropdown-boxes {
     display: flex;
-    width: 360px;
     height: 138px;
     padding-bottom: 40px;
     flex-direction: column;
@@ -65,7 +61,7 @@
     gap: 20px;
 }
 
-.dropdown-forventning {
+.dropdown-box {
     display: flex;
     justify-content: space-between;
     padding: 12px 15px;
@@ -75,64 +71,93 @@
     background-color: #171777;
 }
 
-.dropdown-forventning__text {
+.dropdown-box__text {
     color: #f5f5f5;
-    font-size: 14px;
 }
 
-.dropdown-praktisk__text {
-    color: #f5f5f5;
-    font-size: 14px;
-}
-
-.dropdown-praktisk {
+.tilmelding {
     display: flex;
-    justify-content: space-between;
-    padding: 12px 15px;
-    align-items: center;
-    gap: 29px;
-    align-self: stretch;
-    background-color: #171777;
-}
-
-.section-pink {
-    display: flex;
-    width: 390px;
-    height: 1146px;
-    padding: 20px 0px;
+    padding: 20px 15px;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 48px;
     background-color: #FFACAC;
 }
 
-.tilmeldings-section {
+.tilmelding-input {
     display: flex;
-    height: 1146px;
-    margin: 10px 20px;
     flex-direction: column;
-    align-items: flex-end;
-
-    align-self: stretch;
+    gap: 30px;
 }
 
-.internatvælger-text {
-    color: #171777;
-    font-family: "Nunito Sans";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
+.tilmelding-input__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
+.tilmelding-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.vælg-internat-box{
+    display: flex;
+    flex-direction: row;
 }
 
 .internat-box {
     display: flex;
     height: 20px;
-    width: 300px;
-    margin: 10px;
-    padding: 10px;
-
+    padding: 10px 0px;
     align-items: center;
     background-color: #f5f5f5;
+    border-radius: 2px 0px 0px 2px;
+    width: 100%;
+}
+
+.internat-box__text{
+    color: #BDBDBD;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.button-arrow-small {
+    background-color: #171777;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 0px 2px 2px 0px;
+
+}
+.button-arrow-small__icon {
+    width: 20px;
+    height: 25px;
+}
+
+.ledige-datoer {
+    background-color: #f5f5f5;
+    display: flex;
+    height: 170px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+
+.info-boks {
+    display: flex;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 2px;
+    background-color: #f5f5f5;
+    color: #BDBDBD;
+    height: 40px;
+    padding: 0px 10px 0px 10px;
 }
