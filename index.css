@@ -132,14 +132,13 @@
     .banner__text {
         position: absolute;
         top: 61px;
-    }
-
-    .banner__text--light-blue {
         color: var(--color-light-blue);
     }
 
-    .banner__text--yellow {
-        color: var(--color-yellow);
+    &.banner--text-yellow {
+        .banner__text {
+            color: var(--color-yellow);
+        }
     }
 }
 
