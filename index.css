@@ -100,25 +100,49 @@
 
 /* =============== Block: ensomhed-section =============== */
 
-/* ===== ensomhed-section*/
 .ensomhed-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
 
-    .ensomhed-section__banner {
-
-    }
-
     .ensomhed-section__content {
-        padding: 0px 15px 0px 15px;
+        padding: 0px 15px 30px 15px;
         display: flex;
         flex-direction: column;
         gap: 40px;
         max-width: 540px;
     }
 }
+
+
+/* ===== banner*/
+.banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+
+    .banner__image {
+        height: 175px;
+    }
+
+    .banner__text {
+        position: absolute;
+        top: 61px;
+    }
+
+    .banner__text--light-blue {
+        color: var(--color-light-blue);
+    }
+
+    .banner__text--yellow {
+        color: var(--color-yellow);
+    }
+}
+
 
 
 /* ===== ensomhed-introduction */
@@ -166,4 +190,72 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+
+/* =============== Block: eventet =============== */
+
+.eventet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    .eventet__description {
+        padding: 0px 15px 40px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        max-width: 540px;
+    }
+}
+
+
+.event-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+
+/* ===== sådan-foregår-eventet */
+
+.sådan-foregår-eventet {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .sådan-foregår-eventet__bodytext {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+/* ===== forventninger */
+
+.forventninger {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.forventninger-bulletpoints {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.forventninger-bulletpoint {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+    .forventninger-bulletpoint__icon {
+        width: 30px;
+        height: 31.383px;
+    }
 }
