@@ -18,7 +18,7 @@
 }
 
 .banner__content .tilmeld__h1 {
-    color: #171777;
+    color: var(--color-blue);
     text-align: center;
     font-family: Poppins;
     font-size: 70px;
@@ -45,7 +45,7 @@
 }
 
 .introduction .p .bold {
-    color: #171777;
+    color: var(--color-blue);
     font-family: "Nunito Sans";
     font-size: 16px;
     font-style: normal;
@@ -68,11 +68,11 @@
     align-items: center;
     gap: 29px;
     align-self: stretch;
-    background-color: #171777;
+    background-color: var(--color-blue);
 }
 
 .dropdown-box__text {
-    color: #f5f5f5;
+    color: var(--color-white);
 }
 
 .tilmelding {
@@ -81,7 +81,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 48px;
-    background-color: #FFACAC;
+    background-color:var(--color-pastel-pink);
 }
 
 .tilmelding-input {
@@ -113,7 +113,7 @@
     height: 20px;
     padding: 10px 0px;
     align-items: center;
-    background-color: #f5f5f5;
+    background-color: var(--color-white);
     border-radius: 2px 0px 0px 2px;
     width: 100%;
 }
@@ -125,7 +125,7 @@
 }
 
 .button-arrow-small {
-    background-color: #171777;
+    background-color: var(--color-blue);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,7 +140,7 @@
 }
 
 .ledige-datoer {
-    background-color: #f5f5f5;
+    background-color: var(--color-white);
     display: flex;
     height: 170px;
     padding: 10px;
@@ -156,7 +156,7 @@
     box-shadow: none;
     border: none;
     border-radius: 2px;
-    background-color: #f5f5f5;
+    background-color: var(--color-white);
     color: #BDBDBD;
     height: 40px;
     padding: 0px 10px 0px 10px;
