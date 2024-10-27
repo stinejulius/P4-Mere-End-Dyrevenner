@@ -1,11 +1,54 @@
 /* This is the base CSS document */
 
 
+/* =============== Color Root =============== */
+
+:root {
+    /* ======= our colors ======= */
+    --color-white: #F5F5F5;
+    /*var(--color-white)*/
+
+    --color-light-blue: #D2DFFF;
+    /*var(--color-light-blue)*/
+
+    --color-blue: #171777;
+    /*var(--color-blue)*/
+
+    --color-yellow: #FFEEAC;
+    /*var(--color-yellow)*/
+
+    --color-light-coral-red: #FF7777;
+    /*var(--color-light-coral-red)*/
+
+    --color-pastel-pink: #FFACAC;
+    /*var(--color-pastel-pink)*/
+
+
+    /* ======= primary color ======= */
+    --color-primary: var(--color-blue);
+    /*var(--color-primary)*/
+
+
+    /* ======= specific colors ======= */
+    --header-bg-color: var(--color-light-blue);
+    /*var(--page-bg-color)*/
+
+    --page-bg-color: var(--color-white);
+    /*var(--page-bg-color)*/
+
+    --footer-bg-color: var(--color-blue);
+    /*var(--page-bg-color)*/
+
+    --text-color: var(--color-blue);
+    /*var(--text-color)*/
+}
+
+
 /* =============== Body =============== */
 
 body {
     margin: 0px;
-    background-color: #F5F5F5;
+    background-color: var(--page-bg-color);
 }
 
 
@@ -17,7 +60,7 @@ h1 {
     font-size: 90px;
     font-weight: 900;
     font-style: normal;
-    color: #171777;
+    color: var(--text-color);
     margin: 0px;
 }
 
@@ -28,7 +71,7 @@ h2 {
     font-size: 35px;
     font-weight: 900;
     font-style: normal;
-    color: #171777;
+    color: var(--text-color);
     margin: 0px;
 }
 
@@ -39,7 +82,7 @@ h3 {
     font-size: 20px;
     font-weight: 400;
     font-style: normal;
-    color: #171777;
+    color: var(--text-color);
     line-height: 150%;
     margin: 0px;
 }
@@ -51,7 +94,7 @@ h4 {
     font-size: 64px;
     font-weight: 900;
     font-style: normal;
-    color: #171777;
+    color: var(--text-color);
     line-height: 100%;
     margin: 0px;
 }
@@ -63,7 +106,7 @@ p {
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
-    color: #171777;
+    color: var(--text-color);
     line-height: 150%;
     margin: 0px;
 }
@@ -103,7 +146,7 @@ p.small {
 
 .header {
     padding: 0px 15px 0px 15px;
-    background: #D2DFFF;
+    background: var(--header-bg-color);
     position: sticky;
 
     .header__content {
@@ -121,15 +164,50 @@ p.small {
 }
 
 
+/* =============== CTA button =============== */
+
+.cta-button {
+    /* Neutralizes the default styles on the semantic tag 'button' */
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    text-decoration: none;
+
+    /* Button style */
+    display: flex;
+    width: 100%;
+    max-width: 125px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 22px;
+    background-color: var(--color-light-coral-red);
+}
+
+.cta-button:hover {
+    background-color: var(--color-blue);
+
+    p {
+           color: var(--color-light-coral-red); 
+    }
+
+}
+
+
 /* =============== Footer =============== */
 
 footer p {
-    color: #D2DFFF;
+    color: var(--color-light-blue);
 }
 
 .footer {
     padding: 15px;
-    background: #171777;
+    background: var(--footer-bg-color);
 
     .footer__content {
         display: flex;
@@ -205,7 +283,7 @@ footer p {
 
 /* =============== Media Query =============== */
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 901px) {
 
     /* =============== Typography | desktop =============== */
 

@@ -1,0 +1,169 @@
+/* This is the index CSS document */
+
+
+/* =============== Block: introduction =============== */
+
+/* ===== introduction__banner */
+
+.introduction__banner {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+.intro-image {
+    height: 350px;
+    object-fit: contain;
+    align-self: flex-start;
+}
+
+.intro-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 320px;
+
+    position: absolute;
+    top: 75px;
+
+
+    .intro-heading__text {
+        line-height: 64px;
+    }
+}
+
+
+/* ===== introduction-content */
+
+.introduction-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    padding: 30px 15px 30px 15px;
+
+    .introduction-content__subheader {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        max-width: 540px;
+    }
+
+    .introduction-content__box {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+}
+
+.intro-paw-prints {
+    height: 104px;
+}
+
+.intro-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 540px;
+}
+
+.logo-collab {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    .logo-collab__dyrenes-beskyttelse {
+        width: 82px;
+    }
+}
+
+.logo-composition {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    align-items: center;
+
+    .logo-composition__cross {
+        width: 18px;
+    }
+
+    .logo-composition__en-af-os {
+        width: 148px;
+        height: 44.411px;
+    }
+}
+
+
+/* =============== Block: ensomhed-section =============== */
+
+/* ===== ensomhed-section*/
+.ensomhed-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    .ensomhed-section__banner {
+
+    }
+
+    .ensomhed-section__content {
+        padding: 0px 15px 0px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 540px;
+    }
+}
+
+
+/* ===== ensomhed-introduction */
+
+.ensomhed-introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+
+/* ===== ensomhed-signs-content */
+
+.ensomhed-signs-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.ensomhed-all-signs {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.ensomhed-sign {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    .ensomhed-sign__description {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+/* ===== ensomhed-closing-text */
+
+.ensomhed-closing-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
