@@ -132,7 +132,14 @@
     .banner__text {
         position: absolute;
         top: 61px;
+    }
+
+    .banner__text--light-blue {
         color: var(--color-light-blue);
+    }
+
+    .banner__text--yellow {
+        color: var(--color-yellow);
     }
 }
 
@@ -183,4 +190,72 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+
+/* =============== Block: eventet =============== */
+
+.eventet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    .eventet__description {
+        padding: 0px 15px 40px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        max-width: 540px;
+    }
+}
+
+
+.event-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+
+/* ===== sådan-foregår-eventet */
+
+.sådan-foregår-eventet {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .sådan-foregår-eventet__bodytext {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+/* ===== forventninger */
+
+.forventninger {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.forventninger-bulletpoints {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.forventninger-bulletpoint {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+    .forventninger-bulletpoint__icon {
+        width: 30px;
+        height: 31.383px;
+    }
 }
