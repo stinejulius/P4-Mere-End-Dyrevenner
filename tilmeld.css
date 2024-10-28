@@ -258,55 +258,75 @@
         display: none;
     }
 
+.forventning-og-praktisk{
+    display: flex;
+padding-bottom: 48px;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
 
-    .forventning-og-praktisk {
-        background-color: var(--color-light-blue);
-        display: flex;
-        padding: 24px;
-        margin-bottom: 48px;
-        max-width: 900px;
-    }
+}
 
-    .forventning-og-praktisk__content {
-        display: flex;
-        padding: 24px 48px;
-    }
+.forventning-og-praktisk-boks{
+    display: flex;
+width: 1200px;
+padding: 24px 48px;
+flex-direction: column;
+align-items: flex-start;
+background-color: var(--color-light-blue);
+}
 
-    .forventning-og-praktisk__text {
-        display: flex;
-        justify-content: space-between;
-        
-    }
+.forventning-og-praktisk__content{
+    display: flex;
+justify-content: space-between;
+align-items: flex-start;
+align-self: stretch;
+}
 
-    .forventning-textbox {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-    }
+.forventning__content{
+    display: flex;
+width: 500px;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+}
 
-    .forventning-text {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-    }
+.forventning__text{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+align-self: stretch;
+}
 
-    .praktisk-textbox {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-    }
+.praktisk__content{
+    display: flex;
+width: 500px;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+}
 
-    .praktisk-text {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-    }
+.praktisk__text{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+align-self: stretch;
+}
 
-    .points {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 15px;
+.points{
+    display: flex;
+align-items: flex-start;
+gap: 15px;
+align-self: stretch;
+}
 
-    }
+.point-dot{
+    display: flex;
+width: 7px;
+padding: 7px 0px;
+align-items: center;
+gap: 10px;
+}
 }
