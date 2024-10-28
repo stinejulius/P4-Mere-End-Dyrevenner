@@ -78,6 +78,7 @@
 
     .logo-collab__dyrenes-beskyttelse {
         width: 82px;
+        height: 88px;
     }
 }
 
@@ -131,7 +132,64 @@
 }
 
 
-/* =============== Block: ensomhed-section =============== */
+/* ===== introduction-content-desktop */
+
+.introduction-content-desktop {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+
+    .introduction-content-desktop__text-billeder {
+        display: flex;
+        padding: 60px 0px;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+
+        background-color: var(--color-light-blue);
+    }
+
+    .introduction-content-desktop__logo-samling {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 48px 0px;
+        gap: 50px;
+    }
+}
+
+.text-image-gallery-desktop {
+    display: flex;
+    max-width: 1200px;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding: 0px 24px;
+
+    .text-image-gallery-desktop-box {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+}
+
+.introduction-desktop-image {
+    max-width: 600px;
+    min-width: 400px;
+    border-radius: 2px;
+}
+
+.logo-collab__dyrenes-beskyttelse {
+    width: 200px;
+}
+
+.cta-text-desktop {
+    width: 680px;
+    text-align: center;
+}
+
+
+/* =============== Block: ensomhed-section - mobile =============== */
 
 .ensomhed-section {
     display: flex;
@@ -225,6 +283,76 @@
 }
 
 
+/* =============== Block: ensomhed-section - desktop =============== */
+
+.banner-desktop {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+
+    .banner__image {
+        height: 500px;
+    }
+
+    .banner__text {
+        position: absolute;
+        top: 205px;
+        color: var(--color-light-blue);
+    }
+
+    &.banner--text-yellow {
+        .banner__text {
+            color: var(--color-yellow);
+        }
+    }
+}
+
+/* ===== tegn på ensomhed */
+
+.ensomhed-signs-content-desktop {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 96px;
+    padding-bottom: 48px;
+}
+
+.ensomhed-signs-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+.ensomhed-sign-card-desktop {
+    max-width: 368px;
+    height: 482px;
+
+    border-radius: 40px;
+    background: #D2DFFF;
+
+    .ensomhed-sign-card-desktop__inner {
+        display: flex;
+        padding: 24px 30px;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+}
+
+.ensomhed-sign-card-desktop-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+
+
 /* =============== Block: eventet =============== */
 
 .eventet {
@@ -290,6 +418,12 @@
         width: 30px;
         height: 31.383px;
     }
+
+    .forventninger-bulletpoint__icon-desktop {
+        display: none;
+        width: 50px;
+        margin-top: -3px;
+    }
 }
 
 
@@ -323,6 +457,10 @@
     .oplevelser-card__image {
         width: 100%;
         border-radius: 2px;
+    }
+
+    .oplevelser-card__image-desktop {
+        display: none;
     }
 
     .oplevelser-card__description {
@@ -361,17 +499,162 @@
 
 @media only screen and (min-width: 901px) {
 
-    /* =============== section | introduction - mobile =============== */
+    /* =============== section | introduction =============== */
 
-    .introduction {
+    .introduction__banner {
         display: none;
     }
 
 
-    /* =============== section | introduction - desktop =============== */
-
     .introduction-desktop__banner {
         display: flex;
     }
+
+    .introduction-content {
+
+        .introduction-content__subheader {
+            max-width: 1200px;
+            padding: 72px;
+            gap: 96px;
+        }
+
+        .introduction-content__box {
+            display: none;
+        }
+    }
+
+    .intro-paw-prints {
+        display: none;
+    }
+
+
+    .introduction-content-desktop {
+        display: flex;
+    }
+
+    .logo-composition {
+        .logo-composition__cross {
+            width: 32px;
+        }
+    
+        .logo-composition__en-af-os {
+            width: 320px;
+            height: 96.024px;
+        }
+    }
+
+    /* =============== section | ensomhed =============== */
+
+    .banner {
+        display: none;
+    }
+
+    .banner-desktop {
+        display: flex;
+    }
+
+    .ensomhed-introduction {
+        text-align: center;
+    }
+
+    .ensomhed-introduction p {
+        font-size: 32px;
+    }
+
+    .ensomhed-section__content {
+        .ensomhed-closing-text {
+            display: none;
+        }
+    }
+
+    .ensomhed-signs-content {
+        display: none;
+    }
+
+    .ensomhed-signs-content-desktop {
+        display: flex;
+    }
+
+
+    /* =============== section | eventet =============== */
+
+    .eventet {
+        .eventet__description {
+            max-width: 1200px;
+        }
+    }
+
+    .event-information {
+        align-items: flex-start;
+        flex-direction: row;
+        gap: 96px;
+    }
+    
+    .sådan-foregår-eventet, .forventninger {
+        max-width: 540px;
+    }
+
+    .forventninger-bulletpoint {
+        align-items: flex-start;
+
+        .forventninger-bulletpoint__icon {
+            display: none;
+        }
+
+        .forventninger-bulletpoint__icon-desktop {
+            display: unset;
+        }
+    }
+
+
+
+    /* =============== section | andres oplevelser =============== */
+
+    .andres-oplevelser {
+        padding: 48px 24px;
+    }
+
+    .oplevelser-cards {
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    .oplevelser-card {
+        flex-direction: row;
+        padding: 40px;
+        gap: 40px;
+        align-items: center;
+        border-radius: 200px;
+
+        .oplevelser-card__image {
+            display: none;
+        }
+
+        .oplevelser-card__image-desktop {
+            display: flex;
+            max-width: 428px;
+            height: 300px;
+            border-radius: 200px 0px 0px 200px;
+            flex-shrink: 0;
+        }
+    }
+
+
+    .oplevelser-card__description {
+        gap: 24px;
+        max-width: 500px;
+    }
+
+
+    /* =============== section | vil du vide mere =============== */
+
+    .vil-du-vide-mere {
+        padding: 48px 0px;
+
+        .vil-du-vide-mere__content {
+            gap: 24px;
+        }
+    }
+
 
 }
