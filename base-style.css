@@ -477,6 +477,13 @@ footer p {
     }
 
 
+    /* =============== CTA-button =============== */
+
+    .cta-button {
+        max-width: 180px;
+    }
+
+
     /* =============== Footer | mobile =============== */
 
     .footer {
@@ -489,4 +496,6 @@ footer p {
     .footer-desktop {
         display: flex;
     }
+
+
 }
