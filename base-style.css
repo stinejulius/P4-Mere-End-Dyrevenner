@@ -145,12 +145,18 @@ p.small {
 }
 
 
-/* =============== Header =============== */
+/* =============== Header | mobile =============== */
 
-.header {
+.header-mobile {
     padding: 0px 15px 0px 15px;
     background: var(--header-bg-color);
     position: sticky;
+    max-width: 900px;
+}
+
+.header {
+    width: 100%;
+
 
     .header__content {
         display: flex;
@@ -166,6 +172,40 @@ p.small {
     }
 }
 
+
+/* =============== Header | desktop =============== */
+
+.header-desktop-outer {
+    padding: 0px 24px 0px 24px;
+    background: var(--header-bg-color);
+    position: sticky;
+
+    display: none;
+    justify-content: center;
+}
+
+.header-desktop {
+    width: 100%;
+    max-width: 1200px;
+
+
+    .header-desktop__content {
+        display: flex;
+        height: 90px;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo-desktop {
+    height: 64px;
+}
+
+.header-menu-desktop {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
 
 /* =============== CTA button =============== */
 
@@ -196,7 +236,7 @@ p.small {
     background-color: var(--color-blue);
 
     p {
-           color: var(--color-light-coral-red); 
+        color: var(--color-light-coral-red);
     }
 
 }
@@ -313,34 +353,19 @@ footer p {
         font-size: 100px;
     }
 
+    /* H5 text - header - menu - text */
+    h5 {
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        color: var(--text-color);
+        margin: 0px;
+    }
+
 
     /* p text - body text - regular */
     p {
         font-size: 18px;
-    }
-
-
-    /* modifier - bold */
-    .bold {
-        font-weight: 700;
-    }
-
-
-    /* modifier - black */
-    .black {
-        font-weight: 900;
-    }
-
-
-    /* modifier - italic */
-    .italic {
-        font-style: italic;
-    }
-
-
-    /* modifier - light */
-    .light {
-        font-weight: 300;
     }
 
 
@@ -349,4 +374,17 @@ footer p {
         font-size: 16px;
     }
 
+
+    /* =============== Header | mobile =============== */
+
+    .header-mobile {
+        display: none;
+    }
+
+
+    /* =============== Header | desktop =============== */
+
+    .header-desktop-outer {
+        display: flex;
+    }
 }
