@@ -207,6 +207,10 @@ p.small {
     gap: 40px;
 }
 
+.menu-highlight {
+    color: var(--color-light-coral-red);
+}
+
 /* =============== CTA button =============== */
 
 .cta-button {

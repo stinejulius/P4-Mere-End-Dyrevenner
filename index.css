@@ -78,6 +78,7 @@
 
     .logo-collab__dyrenes-beskyttelse {
         width: 82px;
+        height: 88px;
     }
 }
 
@@ -128,6 +129,79 @@
     .intro-heading__text {
         line-height: 92px;
     }
+}
+
+
+/* ===== introduction-content-desktop */
+
+.introduction-content-desktop {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+
+    .introduction-content-desktop__text-billeder {
+        display: flex;
+        padding: 60px 0px;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+
+        background-color: var(--color-light-blue);
+    }
+
+    .introduction-content-desktop__logo-samling {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 48px 0px;
+        gap: 50px;
+    }
+}
+
+.text-image-gallery-desktop {
+    display: flex;
+    max-width: 1200px;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+
+    .text-image-gallery-desktop-box {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+}
+
+.introduction-desktop-image {
+    width: 600px;
+    height: 400px;
+    border-radius: 2px;
+}
+
+.logo-collab__dyrenes-beskyttelse {
+    width: 200px;
+}
+
+
+.logo-composition {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    align-items: center;
+
+    .logo-composition__cross {
+        width: 32px;
+    }
+
+    .logo-composition__en-af-os {
+        width: 320px;
+        height: 96.024px;
+    }
+}
+
+.cta-text-desktop {
+    width: 680px;
+    text-align: center;
 }
 
 
@@ -361,17 +435,36 @@
 
 @media only screen and (min-width: 901px) {
 
-    /* =============== section | introduction - mobile =============== */
+    /* =============== section | introduction =============== */
 
-    .introduction {
+    .introduction__banner {
         display: none;
     }
 
 
-    /* =============== section | introduction - desktop =============== */
-
     .introduction-desktop__banner {
         display: flex;
     }
+
+    .introduction-content {
+
+        .introduction-content__subheader {
+            max-width: 1200px;
+        }
+
+        .introduction-content__box {
+            display: none;
+        }
+    }
+
+    .intro-paw-prints {
+        display: none;
+    }
+
+
+    .introduction-content-desktop {
+        display: flex;
+    }
+
 
 }
