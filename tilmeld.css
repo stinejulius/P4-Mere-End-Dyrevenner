@@ -1,6 +1,6 @@
 /* This is the "tilmeld" CSS document */
 
-.banner__content{
+.banner__content {
     display: flex;
     justify-content: center;
 }
@@ -250,83 +250,68 @@
 
 @media only screen and (min-width: 901px) {
 
-.header{
-    display: none;
-}
+    .header {
+        display: none;
+    }
 
     .dropdown-boxes {
         display: none;
     }
 
-.forventning-og-praktisk{
-    display: flex;
-padding-bottom: 48px;
-flex-direction: column;
-align-items: flex-start;
-gap: 10px;
+    .forventning-og-praktisk {
+        display: flex;
+        padding-bottom: 48px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin: 30px;
 
-}
+    }
 
-.forventning-og-praktisk-boks{
-    display: flex;
-width: 1200px;
-padding: 24px 48px;
-flex-direction: column;
-align-items: flex-start;
-background-color: var(--color-light-blue);
-}
+    .forventning-og-praktisk-boks {
+        display: flex;
+        padding: 24px 48px;
+        background-color: var(--color-light-blue);
+    }
 
-.forventning-og-praktisk__content{
-    display: flex;
-justify-content: space-between;
-align-items: flex-start;
-align-self: stretch;
-}
+    .forventning-og-praktisk__content {
+        display: flex;
+    }
 
-.forventning__content{
-    display: flex;
-width: 500px;
-flex-direction: column;
-align-items: flex-start;
-gap: 24px;
-}
+    .forventning__content {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
 
-.forventning__text{
-    display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 24px;
-align-self: stretch;
-}
+    .forventning__text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
 
-.praktisk__content{
-    display: flex;
-width: 500px;
-flex-direction: column;
-align-items: flex-start;
-gap: 24px;
-}
+    .praktisk__content {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding-left: 50px;
+    }
 
-.praktisk__text{
-    display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 24px;
-align-self: stretch;
-}
+    .praktisk__text {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
 
-.points{
-    display: flex;
-align-items: flex-start;
-gap: 15px;
-align-self: stretch;
-}
+    .points {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+    }
 
-.point-dot{
-    display: flex;
-width: 7px;
-padding: 7px 0px;
-align-items: center;
-gap: 10px;
-}
+    .point-dot {
+        display: flex;
+        padding: 7px 0px;
+    }
 }
