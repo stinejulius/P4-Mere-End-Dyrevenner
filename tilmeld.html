@@ -18,7 +18,7 @@
 <body>
 
     <!-- =============== HEADER: MOBILE =============== -->
-    <header>
+    <header class="header-mobile">
         <section class="header">
             <div class="header__content">
                 <img class="logo logo--header"
@@ -29,6 +29,7 @@
         </section>
     </header>
 
+
     <!-- =============== HEADER: DESKTOP =============== -->
     <header class="header-desktop-outer">
         <section class="header-desktop">
@@ -36,7 +37,7 @@
                 <img class="logo-desktop" src="assets/illustrations/general/dyrenes-beskyttelse-logo-horizontal.svg"
                     alt="Dyrenes Beskyttelse logo">
                 <div class="header-menu-desktop">
-                    <h5 class="bold"> Forside </h5>
+                    <h5 class="bold menu-highlight"> Forside </h5>
                     <h5 class="bold"> Tilmeld </h5>
                     <h5 class="bold"> Bliv frivillig </h5>
                     <h5 class="bold"> Giv feedback </h5>
@@ -45,15 +46,24 @@
             </div>
         </section>
     </header>
+
     <main>
-        <!--BANNER SECTION MOBILE-->
+        <!-- =============== SECTION: BANNER =============== -->
+        <!-- ======= MOBILE -->
         <section class="banner">
-            <div class="banner__content">
-                <img class="banner__photo" src="assets/images/mobile/tilmeld-banner-mobile.webp"
-                    alt="mere end dyrevenner banner">
-                <div class="overlay__text">
-                    <p class="tilmeld__h1">TILMELD</p>
-                </div>
+            <img class="banner__image" src="assets/images/mobile/tilmeld-banner-mobile.webp"
+                alt="mere end dyrevenner banner">
+            <div class="banner-overlay">
+                <h1 class="banner-overlay__text"> TILMELD </h1>
+            </div>
+        </section>
+
+        <!-- ======= DESKTOP -->
+        <section class="banner-desktop">
+            <img class="banner-desktop__image" src="assets/images/desktop/tilmeld-banner-desktop.webp"
+                alt="mere end dyrevenner banner">
+            <div class="banner-overlay-desktop">
+                <h1 class="banner-overlay-desktop__text"> TILMELD </h1>
             </div>
         </section>
 

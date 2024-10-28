@@ -1,37 +1,63 @@
 /* This is the "tilmeld" CSS document */
 
-.banner__content {
+
+/* =============== Block: banner - mobile =============== */
+
+.banner {
     display: flex;
     justify-content: center;
-}
-
-.banner__photo {
-    height: 350px;
-    object-fit: cover;
     overflow: hidden;
+
+    .banner__image {
+        height: 350px;
+        object-fit: contain;
+        align-self: flex-start;
+    }
 }
 
-.overlay__text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 450px;
+.banner-overlay {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 205px;
+
+
+    .banner-overlay__text {
+        line-height: 64px;
+    }
+}
+
+
+/* =============== Block: banner - desktop =============== */
+
+.banner-desktop {
+    display: none;
     justify-content: center;
-    align-items: center;
+    overflow: hidden;
 
+    .banner-desktop__image {
+        height: 400px;
+        object-fit: contain;
+        align-self: flex-start;
+    }
 }
 
-.banner__content .tilmeld__h1 {
-    color: var(--color-blue);
-    text-align: center;
-    font-family: Poppins;
-    font-size: 70px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
+.banner-overlay-desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 244px;
+
+
+    .banner-overlay-desktop__text {
+        line-height: 92px;
+    }
 }
+
+
+/* =============== Block: introduction =============== */
 
 .introduction {
     width: 100%;
@@ -257,6 +283,18 @@
     .dropdown-boxes {
         display: none;
     }
+
+    /* =============== section | banner =============== */
+
+    .banner {
+        display: none;
+    }
+
+    .banner-desktop {
+        display: flex;
+    }
+
+    /* =============== section | x =============== */
 
     .forventning-og-praktisk {
         display: flex;
