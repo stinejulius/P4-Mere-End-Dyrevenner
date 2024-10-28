@@ -75,13 +75,17 @@
     color: var(--color-white);
 }
 
+.forventning-og-praktisk {
+    display: none;
+}
+
 .tilmelding {
     display: flex;
     padding: 20px 15px;
     flex-direction: column;
     justify-content: center;
     gap: 48px;
-    background-color:var(--color-pastel-pink);
+    background-color: var(--color-pastel-pink);
 }
 
 .tilmelding-input {
@@ -96,14 +100,14 @@
     gap: 30px;
 }
 
-.tilmelding-box{
+.tilmelding-box {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 100%;
 }
 
-.vælg-internat-box{
+.vælg-internat-box {
     display: flex;
     flex-direction: row;
 }
@@ -118,7 +122,7 @@
     width: 100%;
 }
 
-.internat-box__text{
+.internat-box__text {
     color: var(--color-grey);
     font-size: 14px;
     padding: 10px;
@@ -134,6 +138,7 @@
     border-radius: 0px 2px 2px 0px;
 
 }
+
 .button-arrow-small__icon {
     width: 20px;
     height: 25px;
@@ -162,60 +167,59 @@
     padding: 0px 10px 0px 10px;
 }
 
-.tilmeld{
+.tilmeld {
     display: flex;
-padding: 10px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 48px;
-
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
 }
 
-.spørgsmål-text{
-   text-align: center;
+.spørgsmål-text {
+    text-align: center;
 }
 
-.støt-og-læs{
+.støt-og-læs {
     display: flex;
-padding: 20px;
-flex-direction: column;
-align-items: center;
-background-color: var(--color-white)
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-white)
 }
 
-.støt-box{
+.støt-box {
     display: flex;
-flex-direction: column;
-align-items: center;
+    flex-direction: column;
+    align-items: center;
 
 }
 
-.støt-box__content{
+.støt-box__content {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
 }
 
-.støt-box__text{
+.støt-box__text {
     display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
 }
 
-.find-info-text{
+.find-info-text {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.læs-mere{
-    margin: 30px 0px 60px 0px ;
+.læs-mere {
+    margin: 30px 0px 60px 0px;
 }
 
-.læs-mere-button{
+.læs-mere-button {
     background: none;
     color: inherit;
     border: none;
@@ -236,3 +240,67 @@ gap: 15px;
     background-color: var(--color-light-blue);
 }
 
+/* =======================MEDIA QUERIES======================= */
+
+@media only screen and (min-width: 901px) {
+
+.header{
+    display: none;
+}
+
+    .dropdown-boxes {
+        display: none;
+    }
+
+
+    .forventning-og-praktisk {
+        background-color: var(--color-light-blue);
+        display: flex;
+        padding: 24px;
+        margin-bottom: 48px;
+        max-width: 900px;
+    }
+
+    .forventning-og-praktisk__content {
+        display: flex;
+        padding: 24px 48px;
+    }
+
+    .forventning-og-praktisk__text {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .forventning-textbox {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .forventning-text {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .praktisk-textbox {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .praktisk-text {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .points {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 15px;
+
+    }
+}
