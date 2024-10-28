@@ -17,13 +17,30 @@
 
 <body>
     <!-- =============== HEADER: MOBILE =============== -->
-    <header>
+    <header class="header-mobile">
         <section class="header">
             <div class="header__content">
                 <img class="logo logo--header"
                     src="assets/illustrations/general/dyrenes-beskyttelse-logo-horizontal.svg"
                     alt="Dyrenes Beskyttelse logo">
                 <img src="assets/illustrations/mobile/burger-menu-mobile.svg" alt="Burger menu ikon">
+            </div>
+        </section>
+    </header>
+
+    <!-- =============== HEADER: DESKTOP =============== -->
+    <header class="header-desktop-outer">
+        <section class="header-desktop">
+            <div class="header-desktop__content">
+                <img class="logo-desktop" src="assets/illustrations/general/dyrenes-beskyttelse-logo-horizontal.svg"
+                    alt="Dyrenes Beskyttelse logo">
+                <div class="header-menu-desktop">
+                    <h5 class="bold"> Forside </h5>
+                    <h5 class="bold"> Tilmeld </h5>
+                    <h5 class="bold"> Bliv frivillig </h5>
+                    <h5 class="bold"> Giv feedback </h5>
+                    <h5 class="bold"> Støt </h5>
+                </div>
             </div>
         </section>
     </header>
@@ -101,7 +118,7 @@
             <div class="banner">
                 <img class="banner__image" src="assets/images/mobile/er-du-ensom-banner-mobile.webp"
                     alt="Mand som sidder i et dunket lokale med hænderne foran ansigtet">
-                <h2 class="banner__text banner__text--light-blue"> ER DU ENSOM? </h2>
+                <h2 class="banner__text"> ER DU ENSOM? </h2>
             </div>
 
             <div class="ensomhed-section__content">
@@ -169,10 +186,10 @@
 
         <!-- =============== SECTION: EVENTET =============== -->
         <section class="eventet">
-            <div class="banner">
+            <div class="banner banner--text-yellow">
                 <img src="assets/images/mobile/eventet-banner-mobile.webp"
                     alt="En kat som holder sin pote op mod en hånd">
-                <h2 class="banner__text banner__text--yellow"> EVENTET </h2>
+                <h2 class="banner__text"> EVENTET </h2>
             </div>
 
             <div class="eventet__description">
@@ -242,6 +259,63 @@
 
                 <a class="cta-button" href="tilmeld.html">
                     <p class="bold "> TILMELD </p>
+                </a>
+            </div>
+        </section>
+
+        <!-- =============== SECTION: ANDRES OPLEVELSER =============== -->
+        <section class="andres-oplevelser">
+            <h3 class="bold"> Andres oplevelser </h3>
+            <div class="oplevelser-cards">
+                <div class="oplevelser-card">
+                    <img class="oplevelser-card__image" src="assets/images/mobile/andres-oplevelser-rosa-mobile.webp"
+                        alt="Frivillige Rosa kæler med en grå kat">
+                    <div class="oplevelser-card__description">
+                        <p class="italic">
+                            "Jeg elsker at være omringet af dyrene herude. De giver bare uendelig kærlighed uden at
+                            stille spørgsmål og uden at dømme. Jeg kan slappe af omkring dem og stadig komme lidt ud,
+                            uden at der forventes en masse af mig personligt. Det er rart at kunne støtte et godt formål
+                            på denne måde."
+                        </p>
+                        <p class="italic light"> – Rosa, 21 år, Frivillig </p>
+                    </div>
+                </div>
+
+                <div class="oplevelser-card oplevelser-card--yellow">
+                    <img class="oplevelser-card__image"
+                        src="assets/images/mobile/andres-oplevelser-alexander-mobile.webp"
+                        alt="Tidligere deltager Alexander nusser hund på internatets aktivitetsplæne">
+                    <div class="oplevelser-card__description">
+                        <p class="italic">
+                            “Efter mit besøg på internatet fik jeg lyst til at ansøge om at blive frivillig. Da jeg
+                            deltog i eventet, mærkede jeg det som et pusterum i en ellers presset tid på studiet, og det
+                            var vildt fedt at møde andre, som har det som mig.”
+                        </p>
+                        <p class="italic light"> – Alexander, 20 år, Tidligere deltager </p>
+                    </div>
+                </div>
+
+                <div class="oplevelser-card oplevelser-card--white">
+                    <img class="oplevelser-card__image" src="assets/images/mobile/andres-oplevelser-katrine-mobile.webp"
+                        alt="Tidligere deltager Katrine nusser med en kanin som sidder på hendes skulder">
+                    <div class="oplevelser-card__description">
+                        <p class="italic">
+                            "Det var vildt fedt at møde andre dyreelskere, da jeg var på besøg hos Brande Dyreinternat.
+                            Jeg kan helt klart anbefale det! Man møder en masse passionerede mennesker og bliver lukket
+                            ind i et fantastisk fællesskab."
+                        </p>
+                        <p class="italic light"> – Katrine, 24 år, Tidligere deltager </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============== SECTION: VIL DU VIDE MERE? =============== -->
+        <section class="vil-du-vide-mere">
+            <div class="vil-du-vide-mere__content">
+                <p> Vil du vide mere om Dyrenes Beskyttelse? </p>
+                <a class="cta-button" href="tilmeld.html">
+                    <p class="bold "> LÆS MERE </p>
                 </a>
             </div>
         </section>
