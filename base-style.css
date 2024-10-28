@@ -242,7 +242,7 @@ p.small {
 }
 
 
-/* =============== Footer =============== */
+/* =============== Footer | mobile =============== */
 
 footer p {
     color: var(--color-light-blue);
@@ -251,6 +251,8 @@ footer p {
 .footer {
     padding: 15px;
     background: var(--footer-bg-color);
+    display: flex;
+    justify-content: center;
 
     .footer__content {
         display: flex;
@@ -321,6 +323,92 @@ footer p {
 }
 
 
+/* =============== Footer | desktop =============== */
+
+.footer-desktop {
+    display: none;
+    justify-content: center;
+    background-color: var(--color-blue);
+    padding: 0px 24px;
+
+    .footer-desktop__content {
+        width: 100%;
+        max-width: 1200px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.footer-desktop-information {
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-end;
+
+
+    .footer-desktop-information__content {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    .footer-desktop-information__logoer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 40px;
+    }
+}
+
+.footer-desktop-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .footer-desktop-links__list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-desktop-links__socials {
+        display: flex;
+        gap: 15px;
+    }
+}
+
+.footer-desktop-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .footer-desktop-contact__text {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+.footer-logo-db {
+    width: 185px;
+}
+
+.footer-logo-en-af-os {
+    height: 71px;
+}
+
+.copyright-desktop {
+    display: flex;
+    padding: 40px 0px 15px 0px;
+}
+
+
+
+
+
 
 /* ========================================================================================== */
 
@@ -385,6 +473,20 @@ footer p {
     /* =============== Header | desktop =============== */
 
     .header-desktop-outer {
+        display: flex;
+    }
+
+
+    /* =============== Footer | mobile =============== */
+
+    .footer {
+        display: none;
+    }
+
+
+    /* =============== Footer | mobile =============== */
+
+    .footer-desktop {
         display: flex;
     }
 }
