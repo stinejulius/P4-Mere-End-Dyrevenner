@@ -205,7 +205,7 @@
 }
 
 
-/* =============== Block: ensomhed-section =============== */
+/* =============== Block: ensomhed-section - mobile =============== */
 
 .ensomhed-section {
     display: flex;
@@ -297,6 +297,75 @@
     align-items: center;
     text-align: center;
 }
+
+
+/* =============== Block: ensomhed-section - desktop =============== */
+
+.banner-desktop {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+
+    .banner__image {
+        height: 500px;
+    }
+
+    .banner__text {
+        position: absolute;
+        top: 205px;
+        color: var(--color-light-blue);
+    }
+
+    &.banner--text-yellow {
+        .banner__text {
+            color: var(--color-yellow);
+        }
+    }
+}
+
+/* ===== tegn på ensomhed */
+
+.ensomhed-signs-content-desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 96px;
+    padding-bottom: 48px;
+}
+
+.ensomhed-signs-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+}
+
+.ensomhed-sign-card-desktop {
+    max-width: 368px;
+    height: 482px;
+
+    border-radius: 40px;
+    background: #D2DFFF;
+
+    .ensomhed-sign-card-desktop__inner {
+        display: flex;
+        padding: 24px 30px;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+}
+
+.ensomhed-sign-card-desktop-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
 
 
 /* =============== Block: eventet =============== */
@@ -466,5 +535,25 @@
         display: flex;
     }
 
+    /* =============== section | ensomhed =============== */
 
+    .banner {
+        display: none;
+    }
+
+    .banner-desktop {
+        display: flex;
+    }
+
+    .ensomhed-introduction {
+        text-align: center;
+    }
+
+    .ensomhed-signs-content {
+        display: none;
+    }
+
+    .ensomhed-signs-content-desktop {
+        display: flex;
+    }
 }
