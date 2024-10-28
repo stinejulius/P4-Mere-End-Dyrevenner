@@ -1,8 +1,14 @@
 /* This is the "tilmeld" CSS document */
 
+.banner__content{
+    display: flex;
+    justify-content: center;
+}
+
 .banner__photo {
     height: 350px;
-    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .overlay__text {
