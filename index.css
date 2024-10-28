@@ -173,8 +173,7 @@
 }
 
 .introduction-desktop-image {
-    width: 600px;
-    height: 400px;
+    max-width: 600px;
     border-radius: 2px;
 }
 
@@ -549,6 +548,10 @@
         text-align: center;
     }
 
+    .ensomhed-introduction p {
+        font-size: 32px;
+    }
+
     .ensomhed-signs-content {
         display: none;
     }
@@ -556,4 +559,46 @@
     .ensomhed-signs-content-desktop {
         display: flex;
     }
+
+
+    /* =============== section | andres oplevelser =============== */
+
+    .oplevelser-cards {
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    .oplevelser-card {
+        flex-direction: row;
+        padding: 40px;
+        gap: 40px;
+        align-items: center;
+        border-radius: 200px;
+
+        .oplevelser-card__image {
+            max-width: 428px;
+            height: 300px;
+            border-radius: 200px 0px 0px 200px;
+            flex-shrink: 0;
+        }
+    }
+
+
+    .oplevelser-card__description {
+        gap: 24px;
+        max-width: 500px;
+    }
+
+
+    /* =============== section | vil du vide mere =============== */
+
+    .vil-du-vide-mere {
+        padding: 48px 0px;
+
+        .vil-du-vide-mere__content {
+            gap: 24px;
+        }
+    }
+
+
 }
