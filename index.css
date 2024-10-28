@@ -1,7 +1,7 @@
 /* This is the index CSS document */
 
 
-/* =============== Block: introduction =============== */
+/* =============== Block: introduction - mobile =============== */
 
 /* ===== introduction__banner */
 
@@ -94,6 +94,39 @@
     .logo-composition__en-af-os {
         width: 148px;
         height: 44.411px;
+    }
+}
+
+
+/* =============== Block: introduction - desktop =============== */
+
+/* ===== introduction__banner */
+
+.introduction-desktop__banner {
+    display: none;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+.intro-desktop-image {
+    height: 500px;
+    object-fit: contain;
+    align-self: flex-start;
+}
+
+.intro-desktop-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 209px;
+
+    position: absolute;
+    top: 235px;
+
+
+    .intro-heading__text {
+        line-height: 92px;
     }
 }
 
@@ -319,4 +352,26 @@
         align-items: center;
         gap: 20px;
     }
+}
+
+
+/* ========================================================================================== */
+
+/* =============== Media Query =============== */
+
+@media only screen and (min-width: 901px) {
+
+    /* =============== section | introduction - mobile =============== */
+
+    .introduction {
+        display: none;
+    }
+
+
+    /* =============== section | introduction - desktop =============== */
+
+    .introduction-desktop__banner {
+        display: flex;
+    }
+
 }
