@@ -328,7 +328,7 @@
 /* ===== tegn på ensomhed */
 
 .ensomhed-signs-content-desktop {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     gap: 96px;
@@ -337,9 +337,10 @@
 
 .ensomhed-signs-desktop {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 1200px;
+    gap: 48px;
+    flex-wrap: wrap;
 }
 
 .ensomhed-sign-card-desktop {
@@ -432,6 +433,12 @@
         width: 30px;
         height: 31.383px;
     }
+
+    .forventninger-bulletpoint__icon-desktop {
+        display: none;
+        width: 50px;
+        margin-top: -3px;
+    }
 }
 
 
@@ -465,6 +472,10 @@
     .oplevelser-card__image {
         width: 100%;
         border-radius: 2px;
+    }
+
+    .oplevelser-card__image-desktop {
+        display: none;
     }
 
     .oplevelser-card__description {
@@ -552,6 +563,12 @@
         font-size: 32px;
     }
 
+    .ensomhed-section__content {
+        .ensomhed-closing-text {
+            display: none;
+        }
+    }
+
     .ensomhed-signs-content {
         display: none;
     }
@@ -559,6 +576,38 @@
     .ensomhed-signs-content-desktop {
         display: flex;
     }
+
+
+    /* =============== section | eventet =============== */
+
+    .eventet {
+        .eventet__description {
+            max-width: 1200px;
+        }
+    }
+
+    .event-information {
+        align-items: flex-start;
+        flex-direction: row;
+        gap: 96px;
+    }
+    
+    .sådan-foregår-eventet, .forventninger {
+        max-width: 540px;
+    }
+
+    .forventninger-bulletpoint {
+        align-items: flex-start;
+
+        .forventninger-bulletpoint__icon {
+            display: none;
+        }
+
+        .forventninger-bulletpoint__icon-desktop {
+            display: unset;
+        }
+    }
+
 
 
     /* =============== section | andres oplevelser =============== */
@@ -576,6 +625,11 @@
         border-radius: 200px;
 
         .oplevelser-card__image {
+            display: none;
+        }
+
+        .oplevelser-card__image-desktop {
+            display: flex;
             max-width: 428px;
             height: 300px;
             border-radius: 200px 0px 0px 200px;
