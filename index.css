@@ -181,23 +181,6 @@
     width: 200px;
 }
 
-
-.logo-composition {
-    display: flex;
-    flex-direction: row;
-    gap: 3px;
-    align-items: center;
-
-    .logo-composition__cross {
-        width: 32px;
-    }
-
-    .logo-composition__en-af-os {
-        width: 320px;
-        height: 96.024px;
-    }
-}
-
 .cta-text-desktop {
     width: 680px;
     text-align: center;
@@ -543,6 +526,17 @@
 
     .introduction-content-desktop {
         display: flex;
+    }
+
+    .logo-composition {
+        .logo-composition__cross {
+            width: 32px;
+        }
+    
+        .logo-composition__en-af-os {
+            width: 320px;
+            height: 96.024px;
+        }
     }
 
     /* =============== section | ensomhed =============== */
