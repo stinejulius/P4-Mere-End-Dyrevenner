@@ -84,6 +84,8 @@
     font-weight: 700;
 }
 
+/* =============== Block: drop-down =============== */
+
 .dropdown-boxes {
     display: flex;
     height: 138px;
@@ -110,6 +112,8 @@
 .forventning-og-praktisk {
     display: none;
 }
+
+/* =============== Block: Tilmelding mobile =============== */
 
 .tilmelding {
     display: flex;
@@ -212,6 +216,8 @@
     text-align: center;
 }
 
+/* =============== Block: støt og læs mere mobile =============== */
+
 .støt-og-læs {
     display: flex;
     padding: 20px;
@@ -294,7 +300,7 @@
         display: flex;
     }
 
-    /* =============== section | x =============== */
+    /* =============== section | forventning og praktisk =============== */
 
     .forventning-og-praktisk {
         display: flex;
@@ -352,43 +358,107 @@
         padding: 7px 0px;
     }
 
+    /* =============== section | Tilmelding =============== */
+
     .tilmelding {
         display: none;
     }
 
-    .tilmelding-desktop{
+    .tilmelding-desktop {
         display: flex;
-padding: 48px 0px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 48px;
-align-self: stretch;
-background-color: var(--color-pastel-pink);
+        padding: 48px 0px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 48px;
+        align-self: stretch;
+        background-color: var(--color-pastel-pink);
     }
 
-    .tilmelding-desktop__box{
+    .tilmelding-desktop__content {
         display: flex;
-flex-direction: column;
-align-items: flex-end;
-gap: 48px;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 48px;
     }
 
-    .tilmelding-desktop__content{
+    .tilmelding-desktop-boxes {
         display: flex;
-width: 1200px;
-flex-direction: column;
-justify-content: flex-end;
-align-items: flex-end;
-gap: 24px;
+        justify-content: flex-end;
+        gap: 24px;
     }
 
-    .input-area{
+    .input-boxes {
         display: flex;
-width: 640px;
-height: 334px;
-flex-direction: column;
-justify-content: space-between;
-align-items: flex-start;
+        width: 640px;
+        height: 334px;
+        flex-direction: column;
+        justify-content: space-between;
     }
+
+    /* 'Vælg internat' boksen */
+
+    .internatvælger-frame {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        align-self: stretch;
+    }
+
+    .internatvælger__felt {
+        display: flex;
+        align-items: center;
+        border-radius: 2px;
+        background: var(--color-white);
+    }
+
+    .internatvælger__tekstfelt {
+        display: flex;
+        padding: 10px 24px;
+        align-items: center;
+        gap: 10px;
+        border-radius: 2px 0px 0px 2px;
+        background: var(--color-white);
+    }
+
+    .arrow-down-desktop {
+        display: flex;
+        padding: 6px 8px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 0px 2px 2px 2px;
+        background: #171777;
+    }
+
+    .input-felt-desktop {
+        display: flex;
+        align-items: center;
+        gap: 47px;
+        align-self: stretch;
+    }
+
+    .skriv-input-felt {
+        display: flex;
+        align-items: center;
+        gap: 47px;
+    }
+
+    /* Kalender frame */
+    .calender-frame-desktop {
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px;
+        background: var(--color-white);
+    }
+
+    .tilmeld-desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+
 }
