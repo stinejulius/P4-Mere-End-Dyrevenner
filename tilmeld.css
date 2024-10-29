@@ -228,7 +228,7 @@
 /* =============== Block: Tilmeld - desktop =============== */
 
 .tilmeld-desktop {
-    display: flex;
+    display: none;
     padding: 48px 0px;
     flex-direction: column;
     align-items: center;
@@ -550,7 +550,11 @@
         display: none;
     }
 
-    .tilmelding-desktop {
+    .tilmeld-desktop {
+        display: flex;
+    }
+
+    /* .tilmelding-desktop {
         display: flex;
         padding: 48px 0px;
         justify-content: center;
@@ -577,11 +581,11 @@
         height: 334px;
         flex-direction: column;
         justify-content: space-between;
-    }
+    } */
 
     /* 'Vælg internat' boksen */
 
-    .internatvælger-frame {
+    /* .internatvælger-frame {
         display: flex;
         align-items: center;
         gap: 24px;
@@ -640,7 +644,7 @@
         align-items: center;
         border-radius: 2px;
         background: var(--color-white);
-    }
+    } */
 
     /* .tilmeld-desktop {
         display: flex;
