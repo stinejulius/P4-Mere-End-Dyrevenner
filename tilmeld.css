@@ -492,13 +492,17 @@
 
     .forventning-og-praktisk {
         display: flex;
-        background-color: var(--color-light-blue);
-        max-width: 1200px;
-        border-radius: 2px;
+        justify-content: center;
+        width: 100%;
         margin-bottom: 48px;
     }
 
     .forventning-og-praktisk-boks {
+        display: flex;
+        background-color: var(--color-light-blue);
+        max-width: 1200px;
+        border-radius: 2px;
+        margin-bottom: 48px;
         padding: 24px 48px;
     }
 
