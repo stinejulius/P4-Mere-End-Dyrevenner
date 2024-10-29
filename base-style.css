@@ -245,6 +245,12 @@ p.small {
 
 }
 
+/* =============== a tag (links) =============== */
+
+a {
+    text-decoration: none;
+}
+
 
 /* =============== Footer | mobile =============== */
 
