@@ -503,11 +503,11 @@
         max-width: 1200px;
         border-radius: 2px;
         margin-bottom: 48px;
-        padding: 24px 48px;
     }
 
     .forventning-og-praktisk__content {
         display: flex;
+        padding: 24px 48px;
     }
 
     .forventning__content {

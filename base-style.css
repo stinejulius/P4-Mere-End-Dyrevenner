@@ -152,6 +152,8 @@ p.small {
     background: var(--header-bg-color);
     position: sticky;
     max-width: 900px;
+    top: 0;
+    z-index: 500;
 }
 
 .header {
