@@ -127,7 +127,6 @@
     gap: 48px;
     background-color: var(--color-pastel-pink);
     align-items: center;
-    width: 100%;
 }
 
 .tilmelding-input {
@@ -151,6 +150,30 @@
     flex-direction: column;
     gap: 10px;
     width: 100%;
+}
+
+.calender-frame{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.calender-arrows{
+    position: relative;
+    display: flex;
+ 
+}
+
+.calender-arrow-back__icon{
+position: absolute;
+right: 60px;
+
+}
+
+.calender-arrow-next__icon{
+    position: absolute;
+    right: 0;
+   
 }
 
 .vælg-internat-box {
@@ -188,16 +211,6 @@
 .button-arrow-small__icon {
     width: 20px;
     height: 25px;
-}
-
-.ledige-datoer {
-    background-color: var(--color-white);
-    display: flex;
-    height: 170px;
-    padding: 10px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 2px;
 }
 
 
