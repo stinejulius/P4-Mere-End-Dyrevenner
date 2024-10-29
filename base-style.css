@@ -252,6 +252,26 @@ a {
 }
 
 
+/* =============== input (field) =============== */
+
+input {
+    border: none;
+    text-indent: 10px;
+    background-color: var(--color-white);
+}
+
+
+
+input::placeholder {
+    color: var(--color-grey);
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+
 /* =============== Footer | mobile =============== */
 
 footer p {
@@ -473,6 +493,12 @@ footer p {
     }
 
 
+    /* p text - extra small body text */
+    p.x-small {
+        font-size: 12px;
+    }
+
+
     /* =============== Header | mobile =============== */
 
     .header-mobile {
@@ -491,6 +517,19 @@ footer p {
 
     .cta-button {
         max-width: 180px;
+    }
+
+
+    /* =============== input (field) =============== */
+
+    input {
+        text-indent: 24px;
+    }
+
+
+
+    input::placeholder {
+        font-size: 18px;
     }
 
 

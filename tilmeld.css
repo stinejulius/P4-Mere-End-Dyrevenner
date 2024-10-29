@@ -224,9 +224,139 @@
     text-align: center;
 }
 
-.tilmelding-desktop {
+
+/* =============== Block: Tilmeld - desktop =============== */
+
+.tilmeld-desktop {
+    display: flex;
+    padding: 48px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    width: 100%;
+
+    background: var(--color-pastel-pink);
+
+    .tilmeld-desktop__formular {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+        padding: 0px 24px;
+    }
+
+    .tilmeld-desktop__text-mail {
+        text-align: center;
+    }
+}
+
+
+/* Dette er ikke synligt (sådan her skal det se ud når man har valgt et internat) */
+
+.month-arrows-desktop-outer {
+    max-width: 386px;
     display: none;
 }
+
+.month-arrows-desktop {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar-arrows-desktop {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.circle-arrow-desktop {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .circle-arrow-desktop__icon {
+        flex-shrink: 0;
+    }
+}
+
+/* ===== inputs-calendar-desktop (input felterne og tom kalender) */
+
+.inputs-calendar-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .input-fields-desktop {
+        display: flex;
+        width: 640px;
+        height: 334px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .calendar-empty-box-desktop {
+        display: flex;
+        width: 386px;
+        height: 334px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        border-radius: 2px;
+        background: #F5F5F5;
+    }
+}
+
+
+.vælg-internat-dekstop {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+
+.vælg-internat-input-desktop {
+    display: flex;
+    align-items: center;
+
+    .vælg-internat-input-desktop__input {
+        display: flex;
+        width: 450px;
+        align-items: center;
+        gap: 10px;
+        padding: 17px 0px;
+
+        border-radius: 2px 0px 0px 2px;
+        background: #F5F5F5;
+    }
+
+    .vælg-internat-input-desktop__arrow-button {
+        border-radius: 0px 2px 2px 0px;
+        background: var(--color-blue);
+        padding: 16px 19px;
+    }
+}
+
+
+.text-input-field-desktop {
+    display: flex;
+    align-items: center;
+    gap: 47px;
+
+    .text-input-field-desktop__input-box {
+        display: flex;
+        align-items: center;
+        padding: 17px 0px;
+        gap: 10px;
+
+        border-radius: 2px;
+        background: #F5F5F5;
+    }
+}
+
+
 
 /* =============== Block: støt og læs mere mobile =============== */
 .støt-anden-måde {
@@ -512,12 +642,23 @@
         background: var(--color-white);
     }
 
-    .tilmeld-desktop {
+    /* .tilmeld-desktop {
         display: flex;
         width: 200px;
         flex-direction: column;
         align-items: flex-end;
         gap: 10px;
+    } */
+
+
+    /* =============== section | støt og læs =============== */
+
+    .støt-og-læs {
+        padding: 48px 24px;
+    }
+
+    .læs-mere-button {
+        max-width: 180px;
     }
 
     .støt-anden-måde {
@@ -530,16 +671,5 @@
     .støt-box__text {
         display: flex;
         align-items: center;
-    }
-
-
-    /* =============== section | støt og læs =============== */
-
-    .støt-og-læs {
-        padding: 48px 24px;
-    }
-
-    .læs-mere-button {
-        max-width: 180px;
     }
 }
