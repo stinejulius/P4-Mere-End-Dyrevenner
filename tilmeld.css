@@ -201,8 +201,6 @@
 
 .info-boks {
     display: flex;
-    outline: none;
-    box-shadow: none;
     border: none;
     border-radius: 2px;
     background-color: var(--color-white);
@@ -326,10 +324,14 @@
         width: 450px;
         align-items: center;
         gap: 10px;
-        padding: 17px 0px;
+        padding: 12px 0px;
 
         border-radius: 2px 0px 0px 2px;
         background: #F5F5F5;
+    }
+
+    .vælg-internat-input-desktop__input p {
+        padding-left: 24px;
     }
 
     .vælg-internat-input-desktop__arrow-button {
@@ -344,6 +346,7 @@
     display: flex;
     align-items: center;
     gap: 47px;
+    justify-content: space-between;
 
     .text-input-field-desktop__input-box {
         display: flex;
@@ -675,5 +678,6 @@
     .støt-box__text {
         display: flex;
         align-items: center;
+        text-align: center;
     }
 }

@@ -499,6 +499,12 @@ footer p {
     }
 
 
+    /* p text - grey body text */
+    p.grey {
+        color: var(--color-grey);
+    }
+
+
     /* =============== Header | mobile =============== */
 
     .header-mobile {
