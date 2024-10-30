@@ -26,12 +26,12 @@ function updateImage (){
 //event listener på pilene
 
 arrowBack.addEventListener("click", () => {
-    currentIndex = (currentIndex === 0) ? images.length - 2 : currentIndex - 1;
+    currentIndex = (currentIndex === 0) ? images.length - 3 : currentIndex - 1;
     updateImage();
 });
 
 arrowNext.addEventListener("click", () => {
-    currentIndex = (currentIndex === images.length - 2 ) ? 0 : currentIndex + 1;
+    currentIndex = (currentIndex === images.length - 3 ) ? 0 : currentIndex + 1;
     updateImage();
 });
 
