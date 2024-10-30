@@ -7,12 +7,16 @@
     <title>Mere End Dyrevenner | Tilmeld</title>
     <link rel="stylesheet" href="tilmeld.css">
     <link rel="stylesheet" href="base-style.css">
+    <script src="javascript/form-picker-drop-down.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <script defer src="javascript/drop-down-box.js"></script>
+    <script src="javascript/calender-changer.js" defer ></script>
+    <script defer src="javascript/burger-menu.js"></script>
+
 </head>
 
 <body>
@@ -24,8 +28,11 @@
                 <img class="logo logo--header"
                     src="assets/illustrations/general/dyrenes-beskyttelse-logo-horizontal.svg"
                     alt="Dyrenes Beskyttelse logo">
-                <img src="assets/illustrations/mobile/burger-menu-mobile.svg" alt="Burger menu ikon">
             </div>
+            <button class="burger-icon" id="burgerMenu">
+            <img src="assets/illustrations/mobile/burger-menu-mobile.svg" alt="Burger menu ikon">
+            </button>
+        <nav class="burgermenu" id="burgermenu"></nav>
         </section>
     </header>
 
@@ -201,7 +208,7 @@
                 <div class="tilmelding-input__content">
                     <div class="tilmelding-box">
                         <p class="bold">Vælg internat</p>
-                        <div class="vælg-internat-box">
+                        <div id="internat-box-outer" class="vælg-internat-box">
                             <div class="internat-box">
                                 <p class="internat-box__text">-Vælg-</p>
                             </div>
@@ -214,10 +221,21 @@
                     </div>
                 </div>
                 <div class="tilmelding-box">
-                    <p class="bold">Se ledige datoer</p>
-                    <div class="ledige-datoer">
-                        <p class="small">Vælg internat for at se ledige datoer</p>
+                    <div class="calender-frame">
+                        <p class="bold">Se ledige datoer</p>
+                        <img id="calenderImage" class="october-calender" src="assets/images/mobile/october-calender.svg"
+                            alt="oktober kalender">
+                        <div class="calender-arrows">
+                            <div id="arrowBack"  class="calender-arrow-back__icon">
+                                <img src="assets/illustrations/mobile/arrow_back.svg" alt="pil tilbage">
+                            </div>
+                            <div id="arrowNext" class="calender-arrow-next__icon">
+                                <img src="assets/illustrations/mobile/arrow_next.svg" alt="">
+                            </div>
+                        </div>
                     </div>
+
+
                 </div>
                 <div class="tilmelding-box">
                     <p class="bold">Fulde navn</p>
@@ -456,4 +474,5 @@
         </section>
     </footer>
 </body>
+
 </html>
