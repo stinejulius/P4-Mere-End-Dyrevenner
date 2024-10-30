@@ -156,9 +156,63 @@ p.small {
     z-index: 500;
 }
 
+.burger-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.burgermenu.open .burger-icon {
+    display: none; /* Skjul burger-ikonet, når menuen er åben */
+}
+
+.burger-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.burgermenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 300px;
+    width: 100vw;
+    background-color: #171777;
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+}
+
+.burgermenu ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.burgermenu ul li {
+    margin: 20px 0;
+}
+
+.burgermenu ul li a {
+    font-family: nunito sans;
+    color: #D2DFFF;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.burgermenu ul li a.active {
+    color: #FF7777;
+}
+
+.burgermenu.open {
+    transform: translateX(0);
+}
+
 .header {
     width: 100%;
-
 
     .header__content {
         display: flex;
