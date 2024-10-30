@@ -126,7 +126,6 @@
     gap: 48px;
     background-color: var(--color-pastel-pink);
     align-items: center;
-    width: 100%;
 }
 
 .tilmelding-input {
@@ -152,9 +151,45 @@
     width: 100%;
 }
 
+.calender-frame{
+  position: relative;
+  display: inline-block;
+}
+
+.october-calender{
+    display: block;
+    width: 100%;
+}
+
+.calender-arrows{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 8%;
+    right: 5%;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+
+.calender-arrow-back__icon{
+position: absolute;
+right: 60px;
+cursor: pointer;
+
+}
+
+.calender-arrow-next__icon{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+   
+}
+
 .vælg-internat-box {
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 .internat-box {
@@ -169,7 +204,6 @@
 
 .internat-box__text {
     color: var(--color-grey);
-    font-size: 14px;
     padding: 10px;
 }
 
@@ -187,16 +221,6 @@
 .button-arrow-small__icon {
     width: 20px;
     height: 25px;
-}
-
-.ledige-datoer {
-    background-color: var(--color-white);
-    display: flex;
-    height: 170px;
-    padding: 10px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 2px;
 }
 
 
@@ -222,6 +246,41 @@
 .spørgsmål-text {
     text-align: center;
 }
+
+
+/* =============== Style for HTML JS drop down animalhome list =============== */
+
+.drop-down-animalhome-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    z-index: 100;
+}
+
+.drop-down-animalhome-list p {
+    padding: 15px;
+    border-bottom: 2px solid var(--color-light-blue);
+    background-color: var(--color-blue);
+    color: var(--color-light-blue);
+}
+
+.drop-down-animalhome-list p:last-child {
+    border-bottom: none;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.drop-down-animalhome-list p:hover {
+    color: var(--color-blue);
+    background-color: var(--color-light-coral-red);
+}
+
+/* Hvis der ikke er mellemrum mellem classes så skal den have begge classes på samme element */
+.internat-box.internat-box--selected .internat-box__text {
+    color: var(--color-blue);
+}
+
 
 
 /* =============== Block: Tilmeld - desktop =============== */
@@ -352,7 +411,6 @@
         flex: 1 1 auto;
     }
 }
-
 
 
 /* =============== Block: støt og læs mere mobile =============== */
