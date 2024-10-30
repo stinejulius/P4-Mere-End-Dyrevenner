@@ -28,16 +28,14 @@ const animalsHomeNames = [
  * EVENT LISTENER | Listens after a click on inputOuterHTML, calls function foldOutAnimalsHomeNames
  */
 inputOuterHTML.addEventListener("click", () => {
-    foldOutAnimalsHomeNames(inputOuterHTML)
+    foldOutAnimalsHomeNames()
 }) 
 
 
 /**
  * FUNCTION | Function starts when user clicks on inputOuterHTML
  */
-function foldOutAnimalsHomeNames(inputHTML) {
-
-
+function foldOutAnimalsHomeNames() {
     // When trying to open the dropdown, first we check if the dropdown is already open
     if (inputOuterHTML.getElementsByClassName("drop-down-animalhome-list").length > 0) {
         return;
@@ -75,7 +73,7 @@ function foldOutAnimalsHomeNames(inputHTML) {
     }
 
     // The div is inserted in inputHTML after the last content
-    inputHTML.appendChild(animalNamesContainersHTML)
+    inputOuterHTML.appendChild(animalNamesContainersHTML)
 }
 
 
