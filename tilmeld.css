@@ -189,6 +189,7 @@ cursor: pointer;
 .vælg-internat-box {
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 .internat-box {
@@ -203,7 +204,6 @@ cursor: pointer;
 
 .internat-box__text {
     color: var(--color-grey);
-    font-size: 14px;
     padding: 10px;
 }
 
@@ -246,6 +246,41 @@ cursor: pointer;
 .spørgsmål-text {
     text-align: center;
 }
+
+
+/* =============== Style for HTML JS drop down animalhome list =============== */
+
+.drop-down-animalhome-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    z-index: 100;
+}
+
+.drop-down-animalhome-list p {
+    padding: 15px;
+    border-bottom: 2px solid var(--color-light-blue);
+    background-color: var(--color-blue);
+    color: var(--color-light-blue);
+}
+
+.drop-down-animalhome-list p:last-child {
+    border-bottom: none;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.drop-down-animalhome-list p:hover {
+    color: var(--color-blue);
+    background-color: var(--color-light-coral-red);
+}
+
+/* Hvis der ikke er mellemrum mellem classes så skal den have begge classes på samme element */
+.internat-box.internat-box--selected .internat-box__text {
+    color: var(--color-blue);
+}
+
 
 
 /* =============== Block: Tilmeld - desktop =============== */
@@ -376,7 +411,6 @@ cursor: pointer;
         flex: 1 1 auto;
     }
 }
-
 
 
 /* =============== Block: støt og læs mere mobile =============== */
