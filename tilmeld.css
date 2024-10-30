@@ -175,12 +175,14 @@
 .calender-arrow-back__icon{
 position: absolute;
 right: 60px;
+cursor: pointer;
 
 }
 
 .calender-arrow-next__icon{
     position: absolute;
     right: 0;
+    cursor: pointer;
    
 }
 
