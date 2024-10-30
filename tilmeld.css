@@ -152,14 +152,23 @@
 }
 
 .calender-frame{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.october-calender{
+    display: block;
+    width: 100%;
 }
 
 .calender-arrows{
-    position: relative;
+    position: absolute;
     display: flex;
+    flex-direction: column;
+    top: 8%;
+    right: 5%;
+    justify-content: space-between;
+    align-items: center;
  
 }
 
